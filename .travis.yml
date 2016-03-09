@@ -4,4 +4,7 @@ services:
  - docker
 
 script:
+ - hostname
+ - pwd
+ - env
  - docker build -t hatotaka/travisci-docker-test .
