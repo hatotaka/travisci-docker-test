@@ -1,0 +1,7 @@
+sudo: require
+language: golang
+services:
+ - docker
+
+script:
+ - docker build -t hatotaka/travisci-docker-test .
