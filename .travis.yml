@@ -3,6 +3,9 @@ language: golang
 services:
  - docker
 
+install:
+ - curl -sSL https://get.docker.com/ | sh
+
 script:
  - hostname
  - pwd
