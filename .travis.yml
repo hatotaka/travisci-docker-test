@@ -1,13 +1,10 @@
 sudo: require
-language: golang
+language: go
 services:
  - docker
 
-install:
- - curl -sSL https://get.docker.com/ | sh
+#install:
+# - curl -sSL https://get.docker.com/ | sh
 
 script:
- - hostname
- - pwd
- - env
  - docker build -t hatotaka/travisci-docker-test .
