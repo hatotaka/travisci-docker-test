@@ -15,5 +15,6 @@ before_script:
   - ps aux
 
 script:
-  - ps aux
+  - sudo lsof -i
+  - ps auxwww
   - docker -H tcp://0.0.0.0:2375 build -t hatotaka/travisci-docker-test .
