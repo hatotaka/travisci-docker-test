@@ -10,7 +10,7 @@ install:
  - sudo apt-get install docker-engine
 
 before_script:
- - docker daemon &
+ - sudo docker daemon &
 
 script:
  - docker build -t hatotaka/travisci-docker-test .
