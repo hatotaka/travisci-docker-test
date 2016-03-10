@@ -11,6 +11,7 @@ install:
 
 before_script:
   - sudo docker daemon -H tcp://localhost:12345 &
+  - sleep 5
 
 script:
   - docker -H tcp://localhost:12345 build -t hatotaka/travisci-docker-test .
