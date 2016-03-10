@@ -13,4 +13,4 @@ before_script:
  - sudo docker daemon &
 
 script:
- - docker build -t hatotaka/travisci-docker-test .
+ - sudo docker build -t hatotaka/travisci-docker-test .
