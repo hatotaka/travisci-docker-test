@@ -10,8 +10,8 @@ install:
  - sudo apt-get install docker-engine
 
 before_script:
-  - sudo docker daemon -H tcp://localhost:12345 &
+  - sudo docker daemon -H tcp://0.0.0.0:2375 &
   - sleep 5
 
 script:
-  - docker -H tcp://localhost:12345 build -t hatotaka/travisci-docker-test .
+  - docker -H tcp://0.0.0.0:2375 build -t hatotaka/travisci-docker-test .
